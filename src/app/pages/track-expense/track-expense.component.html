@@ -1,0 +1,22 @@
+<div class="expense-buttons-container">
+    <h1 class="expense-title">Track Your Expenses</h1>
+  
+    <div class="button-group">
+      <button>Add Income</button>
+      <button (click)="toggleExpenseForm()">Add Expense</button>
+      <button>Show History</button>
+    </div>
+  
+    <div *ngIf="showExpenseForm" class="expense-form">
+        <input type="text" [(ngModel)]="expenseAmount" placeholder="Enter Amount" class="form-input" pattern="^\d*\.?\d*$" />
+      
+        <select [(ngModel)]="selectedCategory" class="form-input">
+          <option value="" disabled selected>Select Category</option>
+          <option value="Need">Need</option>
+          <option value="Want">Want</option>
+          <option value="Waste">Waste</option>
+        </select>
+      
+        <button class="submit-btn" (click)="submitExpense()">Submit</button>
+      </div>
+  </div>

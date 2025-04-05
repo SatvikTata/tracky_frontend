@@ -1,0 +1,59 @@
+.expense-buttons-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .expense-title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    width: 300px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+  }
+  
+  .expense-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .form-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-btn {
+    width: 150px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+  }
